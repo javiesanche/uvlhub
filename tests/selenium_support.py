@@ -30,7 +30,7 @@ __all__ = ["close_driver", "get_host_for_selenium_testing", "initialize_driver"]
 # project name the stack is brought up under. Only defaulted in Docker: a
 # local run without a grid should keep launching a local browser.
 if os.getenv("WORKING_DIR", "") == "/workspace/":
-    os.environ.setdefault("SELENIUM_GRID_URL", "http://selenium_hub_container:4444")
+    os.environ.setdefault("SELENIUM_GRID_URL", "http://selenium_hub_container:4444") 
     os.environ.setdefault("SELENIUM_TARGET_URL", "http://nginx_web_server_container")
 
 
